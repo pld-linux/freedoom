@@ -21,7 +21,7 @@ DOOM.
 Summary:	FreeDoom data for doomlegacy
 Summary(pl):	Dane FreeDoom dla gry doomlegacy
 Group:		Applications/Games
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	doomlegacy-common
 
 %description -n doomlegacy-data-freedoom
@@ -34,7 +34,7 @@ Dane FreeDoom dla gry doomlegacy.
 Summary:	FreeDoom data for prboom
 Summary(pl):	Dane FreeDoom dla gry prboom
 Group:		Applications/Games
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	prboom
 
 %description -n prboom-data-freedoom
@@ -47,7 +47,7 @@ Dane FreeDoom dla gry prboom.
 Summary:	FreeDoom data for doomsday
 Summary(pl):	Dane FreeDoom dla gry doomsday
 Group:		Applications/Games
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	doomsday
 
 %description -n doomsday-data-freedoom
