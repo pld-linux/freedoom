@@ -1,4 +1,3 @@
-# TODO: URL, better summaries/descriptions
 Summary:	FreeDoom - free WAD file for DOOM games
 Summary(pl):	FreeDoom - wolnodostêpny plik WAD dla gier DOOM
 Name:		freedoom
@@ -8,13 +7,15 @@ License:	?
 Group:		Applications/Games
 Source0:	http://freedoom.sourceforge.net/deutex/wads/doom2.wad.gz
 # Source0-md5:	32610843ccad90028257595c3ca1a8a5
+URL:		http://freedoom.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-FreeDoom - free WAD file for DOOM games.
+FreeDoom - free DOOM II-compatible WAD file for DOOM games.
 
 %description -l pl
-FreeDoom - wolnodostêpny plik WAD dla gier DOOM.
+FreeDoom - wolnodostêpny plik WAD kompatybilny z DOOM II dla gier
+DOOM.
 
 %package -n doomlegacy-data-freedoom
 Summary:	FreeDoom data for doomlegacy
