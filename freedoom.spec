@@ -2,7 +2,7 @@ Summary:	FreeDoom - free WAD file for DOOM games
 Summary(pl):	FreeDoom - wolnodostêpny plik WAD dla gier DOOM
 Name:		freedoom
 Version:	2
-Release:	1
+Release:	2
 License:	?
 Group:		Applications/Games
 Source0:	http://freedoom.sourceforge.net/deutex/wads/doom2.wad.gz
@@ -43,15 +43,29 @@ FreeDoom data for prboom.
 %description -n prboom-data-freedoom -l pl
 Dane FreeDoom dla gry prboom.
 
+%package -n doomsday-data-freedoom
+Summary:	FreeDoom data for doomsday
+Summary(pl):	Dane FreeDoom dla gry doomsday
+Group:		Applications/Games
+Requires:	%{name} = %{version}
+Requires:	doomsday
+
+%description -n doomsday-data-freedoom
+FreeDoom data for doomsday.
+
+%description -n doomsday-data-freedoom -l pl
+Dane FreeDoom dla gry doomsday.
+
 %prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/{games/{freedoom,doom},doomlegacy}
+install -d $RPM_BUILD_ROOT%{_datadir}/{games/{freedoom,doom},doomlegacy,deng/Data/jDoom}
 
 gzip -dc %{SOURCE0} > $RPM_BUILD_ROOT%{_datadir}/games/freedoom/doom2.wad
 ln -sf %{_datadir}/games/freedoom/doom2.wad $RPM_BUILD_ROOT%{_datadir}/doomlegacy
 ln -sf %{_datadir}/games/freedoom/doom2.wad $RPM_BUILD_ROOT%{_datadir}/games/doom
+ln -sf %{_datadir}/games/freedoom/doom2.wad $RPM_BUILD_ROOT%{_datadir}/deng/Data/jDoom/Doom2.wad
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -67,3 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -n prboom-data-freedoom
 %defattr(644,root,root,755)
 %{_datadir}/games/doom/doom2.wad
+
+%files -n doomsday-data-freedoom
+%defattr(644,root,root,755)
+%{_datadir}/deng/Data/jDoom/Doom2.wad
