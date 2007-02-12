@@ -1,5 +1,5 @@
 Summary:	FreeDoom - free WAD file for DOOM games
-Summary(pl):	FreeDoom - wolnodostêpny plik WAD dla gier DOOM
+Summary(pl.UTF-8):   FreeDoom - wolnodostÄ™pny plik WAD dla gier DOOM
 Name:		freedoom
 Version:	0.5
 Release:	1
@@ -15,13 +15,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 FreeDoom - free DOOM II-compatible WAD file for DOOM games.
 
-%description -l pl
-FreeDoom - wolnodostêpny plik WAD kompatybilny z DOOM II dla gier
+%description -l pl.UTF-8
+FreeDoom - wolnodostÄ™pny plik WAD kompatybilny z DOOM II dla gier
 DOOM.
 
 %package -n doomlegacy-data-freedoom
 Summary:	FreeDoom data for doomlegacy
-Summary(pl):	Dane FreeDoom dla gry doomlegacy
+Summary(pl.UTF-8):   Dane FreeDoom dla gry doomlegacy
 Group:		Applications/Games
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	doomlegacy-common
@@ -29,12 +29,12 @@ Requires:	doomlegacy-common
 %description -n doomlegacy-data-freedoom
 FreeDoom data for doomlegacy.
 
-%description -n doomlegacy-data-freedoom -l pl
+%description -n doomlegacy-data-freedoom -l pl.UTF-8
 Dane FreeDoom dla gry doomlegacy.
 
 %package -n doomsday-data-freedoom
 Summary:	FreeDoom data for doomsday
-Summary(pl):	Dane FreeDoom dla gry doomsday
+Summary(pl.UTF-8):   Dane FreeDoom dla gry doomsday
 Group:		Applications/Games
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	doomsday
@@ -42,12 +42,12 @@ Requires:	doomsday
 %description -n doomsday-data-freedoom
 FreeDoom data for doomsday.
 
-%description -n doomsday-data-freedoom -l pl
+%description -n doomsday-data-freedoom -l pl.UTF-8
 Dane FreeDoom dla gry doomsday.
 
 %package -n prboom-data-freedoom
 Summary:	FreeDoom data for prboom
-Summary(pl):	Dane FreeDoom dla gry prboom
+Summary(pl.UTF-8):   Dane FreeDoom dla gry prboom
 Group:		Applications/Games
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	prboom
@@ -55,7 +55,7 @@ Requires:	prboom
 %description -n prboom-data-freedoom
 FreeDoom data for prboom.
 
-%description -n prboom-data-freedoom -l pl
+%description -n prboom-data-freedoom -l pl.UTF-8
 Dane FreeDoom dla gry prboom.
 
 %prep
