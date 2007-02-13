@@ -1,5 +1,5 @@
 Summary:	FreeDoom - free WAD file for DOOM games
-Summary(pl.UTF-8):   FreeDoom - wolnodostępny plik WAD dla gier DOOM
+Summary(pl.UTF-8):	FreeDoom - wolnodostępny plik WAD dla gier DOOM
 Name:		freedoom
 Version:	0.5
 Release:	1
@@ -21,7 +21,7 @@ DOOM.
 
 %package -n doomlegacy-data-freedoom
 Summary:	FreeDoom data for doomlegacy
-Summary(pl.UTF-8):   Dane FreeDoom dla gry doomlegacy
+Summary(pl.UTF-8):	Dane FreeDoom dla gry doomlegacy
 Group:		Applications/Games
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	doomlegacy-common
@@ -34,7 +34,7 @@ Dane FreeDoom dla gry doomlegacy.
 
 %package -n doomsday-data-freedoom
 Summary:	FreeDoom data for doomsday
-Summary(pl.UTF-8):   Dane FreeDoom dla gry doomsday
+Summary(pl.UTF-8):	Dane FreeDoom dla gry doomsday
 Group:		Applications/Games
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	doomsday
@@ -47,7 +47,7 @@ Dane FreeDoom dla gry doomsday.
 
 %package -n prboom-data-freedoom
 Summary:	FreeDoom data for prboom
-Summary(pl.UTF-8):   Dane FreeDoom dla gry prboom
+Summary(pl.UTF-8):	Dane FreeDoom dla gry prboom
 Group:		Applications/Games
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	prboom
