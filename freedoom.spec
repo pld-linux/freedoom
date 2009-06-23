@@ -6,10 +6,11 @@ Release:	1
 Epoch:		1
 License:	BSD
 Group:		Applications/Games
-Source0:	http://mirror.lihnidos.org/GNU/savannah/freedoom/freedoom-iwad/%{name}-iwad-0.6.4.zip
+Source0:	http://mirror.lihnidos.org/GNU/savannah/freedoom/freedoom-iwad/%{name}-iwad-%{version}.zip
 # Source0-md5:	32b75e338153957fa136847069e20141
 URL:		http://freedoom.sourceforge.net/
 BuildRequires:	unzip
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
