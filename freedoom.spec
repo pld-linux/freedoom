@@ -1,13 +1,14 @@
+%define		_rc	rc1
 Summary:	FreeDoom - free WAD file for DOOM games
 Summary(pl.UTF-8):	FreeDoom - wolnodostępny plik WAD dla gier DOOM
 Name:		freedoom
-Version:	0.6.4
-Release:	1
+Version:	0.7
+Release:	0.%{_rc}.1
 Epoch:		1
 License:	BSD
 Group:		Applications/Games
-Source0:	http://mirror.lihnidos.org/GNU/savannah/freedoom/freedoom-iwad/%{name}-iwad-%{version}.zip
-# Source0-md5:	32b75e338153957fa136847069e20141
+Source0:	http://mirror.lihnidos.org/GNU/savannah/freedoom/freedoom-iwad/%{name}-iwad-%{version}-%{_rc}.zip
+# Source0-md5:	57ecc553a14ef6d79e2fb9c1f7df9b25
 URL:		http://freedoom.sourceforge.net/
 BuildRequires:	unzip
 BuildArch:	noarch
@@ -60,7 +61,7 @@ FreeDoom data for prboom.
 Dane FreeDoom dla gry prboom.
 
 %prep
-%setup -q -n %{name}-iwad-%{version}
+%setup -q -n %{name}-iwad-%{version}-%{_rc}
 
 %install
 rm -rf $RPM_BUILD_ROOT
