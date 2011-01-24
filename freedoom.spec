@@ -1,13 +1,13 @@
 Summary:	FreeDoom - free WAD file for DOOM games
 Summary(pl.UTF-8):	FreeDoom - wolnodostępny plik WAD dla gier DOOM
 Name:		freedoom
-Version:	0.6.4
-Release:	2
+Version:	0.7
+Release:	1
 Epoch:		1
 License:	BSD
 Group:		Applications/Games
 Source0:	http://mirror.lihnidos.org/GNU/savannah/freedoom/freedoom-iwad/%{name}-iwad-%{version}.zip
-# Source0-md5:	32b75e338153957fa136847069e20141
+# Source0-md5:	80016bd4250b559c06325bd49eb0137e
 URL:		http://freedoom.sourceforge.net/
 BuildRequires:	unzip
 BuildArch:	noarch
