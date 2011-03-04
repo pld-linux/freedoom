@@ -1,8 +1,11 @@
+#
+# TODO: unify paths
+#
 Summary:	FreeDoom - free WAD file for DOOM games
 Summary(pl.UTF-8):	FreeDoom - wolnodostępny plik WAD dla gier DOOM
 Name:		freedoom
 Version:	0.7
-Release:	1
+Release:	2
 Epoch:		1
 License:	BSD
 Group:		Applications/Games
@@ -81,6 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n doomlegacy-data-freedoom
 %defattr(644,root,root,755)
+%dir %{_datadir}/doomlegacy
 %{_datadir}/doomlegacy/doom2.wad
 
 %files -n doomsday-data-freedoom
@@ -89,4 +93,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n prboom-data-freedoom
 %defattr(644,root,root,755)
+%dir %{_datadir}/games/doom
 %{_datadir}/games/doom/doom2.wad
