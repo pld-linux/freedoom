@@ -5,7 +5,7 @@ Summary:	FreeDoom - free WAD file for DOOM games
 Summary(pl.UTF-8):	FreeDoom - wolnodostępny plik WAD dla gier DOOM
 Name:		freedoom
 Version:	0.7
-Release:	3
+Release:	4
 Epoch:		1
 License:	BSD
 Group:		Applications/Games
